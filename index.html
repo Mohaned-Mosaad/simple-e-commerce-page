@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" href="./css/font_awesome.min.css">
+
+
+      
+      <link rel="stylesheet" href="./components/header/header.css">
+      <script type="module" defer src="/components/header/header.js"></script>
+      
+      <link rel="stylesheet" href="./components/products_section/products_section.css">
+      <script type="module" defer src="/components/products_section/products_section.js"></script>
+            
+      <link rel="stylesheet" href="./components/footer/footer.css">
+      <script type="module" defer src="/components/footer/footer.js"></script>
+            
+      <link rel="stylesheet" href="./index.css">
+      <script type="module" defer src="/index.js"></script>
+   </head>
+   <body>
+      <!-- 
+         Readings: You’re required to read the following articles. 1) https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/
+         2) https://www.joshwcomeau.com/css/interactive-guide-to-grid/
+         ------------------------------------------------------------------------------------------------------------------
+         Create a fully interactive and responsive e-commerce landing page using HTML, CSS, and JavaScript.
+         Requirements:
+         * 1. Header Section:
+            * Include a logo
+            * and a navigation menu with at least three navigation links.
+            * Implement a responsive navigation menu that transforms into a hamburger menu on smaller screens.
+         2. Product Showcase:
+            Display at least five different products with images, names, and prices using a slider.
+            * Implement an interactive feature such as a hover effect 
+            * click event that provides more information about the product.
+         * 3. Searching:
+            * Create a searching mechanism to allow users to search products based on their names.
+            * For this part you can you use any static (dummy) data you define, no need to use an API
+         4. Footer:
+            Create a responsive footer with links to important pages (e.g., About Us, Contact, Privacy Policy).
+            Include social media icons linked to your imaginary e-commerce business profiles.
+         5. Responsive Design:
+            Ensure that your landing page is fully responsive and adapts seamlessly to various screen sizes
+
+         6. Deliverable:
+            Host your website on github-pages, if you don’t know how to, follow this tutorial:
+               https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Using_GitHub_pages 
+            All you need to deliver is the URL of your hosted webpage.
+      -->
+      <div class="container ">
+         <header>
+            <figure class="logo">
+               <span class="website-name">Tradezy </span>
+               <i class="fa-solid fa-chart-pie"></i>
+            </figure>
+         
+            <nav id="navbar">
+               <ul class="links">
+                  <li>
+                     <a href="index.html">home</a>                  
+                  </li>
+                  <li>
+                     <a href="#products">products</a>
+                  </li>
+                  <li>
+                     <a href="#contact-us">contact</a>
+                  </li>
+               </ul>
+            </nav>
+            <button class="burger">
+               <i class="fa-solid fa-bars"></i>
+            </button>
+         </header>
+      </div>
+      <div class="container">
+         <div class="page">
+            <div class="search-wrapper">
+               <div class="search">
+                  <input id="search" placeholder="what are you searching for?" type="text" > 
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+            </div>
+            <div id="not-found">
+               not found
+            </div>
+            <section id="products" class="products-section">
+
+            </section>
+         </div>
+      </div>
+
+      <footer>
+         <div class="container">
+            <div class="col">
+               <h2>ABOUT</h2>
+               <ul>
+                  <li>
+                     <a href="#">Contact Us</a> 
+                  </li>
+                  <li>
+                     <a href="#">About Us</a> 
+                  </li>
+                  <li>
+                     <a href="#">Careers</a> 
+                  </li>
+               </ul>
+            </div>
+            <div class="col">
+               <h2>POLICY</h2>
+               <ul>
+                  <li>
+                     <a href="#">Return Policy</a> 
+                  </li>
+                  <li>
+                     <a href="#">Terms Of Use</a> 
+                  </li>
+                  <li>
+                     <a href="#">Security</a> 
+                  </li>
+               </ul>
+            </div>
+            <div class="col">
+               <h2>SOCIAL</h2>
+               <ul>
+                  <li>
+                     <i class="fa-brands fa-youtube"></i>
+                     <a href="#">YouTube</a> 
+                  </li>
+                  <li>
+                     <i class="fa-brands fa-facebook-f"></i>
+                     <a href="#">Facebook</a> 
+                  </li>
+                  <li>
+                     <i class="fa-brands fa-twitter"></i>
+                     <a href="#">twitter</a> 
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

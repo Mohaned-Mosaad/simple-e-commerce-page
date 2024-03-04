@@ -1,0 +1,37 @@
+.product-page {
+   padding: 20px;
+}
+
+.table-wrapper {
+   padding: 20px;
+   overflow-x: auto;
+}
+
+table {
+   width: 100%;
+}
+
+.td-prop, th {
+   font-size: 1.1rem;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+td, th {
+   padding: 10px;
+   text-align: start;
+}
+
+.button-wapper {
+   display: flex;
+   justify-content: center;
+}
+
+.buy {
+   padding: 10px;
+   background-color: var(--primary-main);
+   color: white;
+   border-radius: 10px;
+   text-transform: uppercase;
+   border: none;   
+   cursor: pointer;
+}
